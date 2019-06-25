@@ -167,9 +167,6 @@ public class PackageUtils {
                 }
             }
         }
-        if (packageName != null && suggestedPackageName != null && !packageName.equals(suggestedPackageName)) {
-            throw new SecurityException("UID [" + callingUid + "] is not related to packageName [" + packageName + "]");
-        }
         return packageName;
     }
 
